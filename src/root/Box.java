@@ -31,7 +31,7 @@ public class Box <T extends Fruit> {
         }
     }
 
-    public boolean compare(Box<? extends Fruit> compareBox) {
+    public boolean compare(Box<?> compareBox) {
         return (getFullWeight() == compareBox.getFullWeight());
     }
 
