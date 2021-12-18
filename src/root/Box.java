@@ -31,7 +31,7 @@ public class Box <T extends Fruit> {
         }
     }
 
-    public boolean compare(Box<? extends Fruit> compareBox) {
+    public boolean compare(Box<?> compareBox) {
         return (getFullWeight() == compareBox.getFullWeight());
     }
 
@@ -43,6 +43,5 @@ public class Box <T extends Fruit> {
 }
 
 
-//f. Написать метод, который позволяет пересыпать фрукты из текущей коробки в другую коробку(помним про сортировку фруктов, нельзя яблоки высыпать в коробку с апельсинами),
-// соответственно в текущей коробке фруктов не остается, а в другую перекидываются объекты, которые были в этой коробке;
+
 
